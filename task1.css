@@ -1,0 +1,487 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: rgb(43 49 55);
+}
+
+/*--------Side Navbar--------*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  #search {
+    width: 100%;
+    font-size: 18px;
+    padding: 11px;
+    border: 1px solid #ddd;
+  }
+
+/*--------Side Navbar Ends--------*/
+
+
+/*-----------Navbar----------*/
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav {
+    background-color: rgb(36, 41, 46);
+    overflow: auto;
+    /* height: 75px; */
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+.blank{
+    display: inline;
+    min-width: 180px;
+}
+.nav-left {
+    align-items: center;
+    display: flex;
+}
+
+nav a, i {
+    color: white;
+    padding: 14px 10px;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding-right: 5px;
+    font-weight: bold;
+}
+
+nav input[type=text] {
+    border: none;
+    height: 4.5vh;
+    width: 200px;
+    border-radius: 2px;
+    background-color: rgb(64 68 72);
+}
+
+.nav-right {
+    align-items: center;
+    display: flex;
+    margin-right: 50px;
+}
+
+.nav-right a{
+    font-weight: 600;
+}
+
+section{
+    height: calc(100vh - 80px);
+    margin: 0px auto;
+    background-color: rgb(43, 49, 55);
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+/*-----------Navbar Ends----------*/
+
+
+/*-----------Main Body-----------*/
+.mainbody{
+    display: flex;
+    align-items: center;
+    margin-top: 145px;
+    margin-right: 120px;
+}
+.text-left{
+    width: 42%;
+    margin-left: 200px;
+    flex: 0.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-right: 40px;
+}
+.text-above{
+    width: 250px;
+    color: rgb(254 254 254);
+    font-size: 60px;
+}
+
+.text-below{
+    color: rgb(104 108 112);
+    font-size: 25px;
+}
+
+.card{
+    background-color: rgb(250 251 252);
+    border: 2px solid white;
+    margin: 10px;
+    margin-top: 60px;
+    width: 350px;
+    border-radius: 3px;
+    padding: 16px 0px 0 12px;
+    flex: 0.5;
+}
+
+li{
+    list-style-type: none;
+    padding: 8px;
+}
+.col-1 {
+    width: 25%;
+    margin-top: 6px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.col-2{
+    width: 75%;
+    margin-top: 6px;
+}
+.col-2 input[type=text] {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    height: 4.5vh;
+    width: 127%;
+    border-radius: 3px;
+    border-style: ridge;
+    border-width: thin;
+    background-color: rgb(255 255 255);
+    border-color: hsla(89, 43%, 51%, 0.3);
+}
+.col-2 input[type=text]:hover, select{
+    border-style: solid;
+    border-color: rgb(114 158 224);
+}
+.passcred p{
+    color: #7a7a7a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12.5px;
+    padding-top: 3px;
+}
+#button{
+    background-image: linear-gradient(rgb(50 203 85), rgb(39 168 69));
+    border-image: linear-gradient(rgb(50 203 85), rgb(39 168 69));
+    padding: 13px 0px; 
+    width: 96%;
+    font-size: 16px;
+    font-weight: 640;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(246 251 244);
+    border-radius: 6px;
+    margin-top: 12px;
+}
+#button2{
+    background-image: linear-gradient(rgb(50 203 85), rgb(39 168 69));
+    border-image: linear-gradient(rgb(50 203 85), rgb(39 168 69));
+    padding: 7px 9px; 
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(246 251 244);
+    border-radius: 6px;
+    margin-top: 12px;
+}
+.tnc{
+    color: #7a7a7a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12.5px;
+    text-align: center;
+    text-align-last: center;
+    padding: 8px 13px 20px 4px;
+}
+.newbtn{
+    display: none;
+    text-align: center;
+}
+/*--------------Main Body Ends-------------*/
+
+
+/*-------------Footer--------------*/
+.foot{
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 6.4%;
+    padding-top: 4.5%;
+}
+.foot-git{
+    color: #7a7a7a;
+    text-align: center;
+    font-size: 16px;
+    padding-bottom: 18px;
+}
+.foot2{
+    font-size: 45px;
+    text-align: center;
+}
+.foot-desc{
+    text-align: center;
+    font-size: 17px;
+    margin-left: 28%;
+    margin-right: 28%;
+}
+.foot-signup{
+    text-align: center;
+    padding-top: 25px;
+}
+.foot-signup #button1{
+    color: rgb(40, 40, 253);
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+/*------------Footer Ends------------*/
+
+/*------------Responsive-------------*/
+
+@media (max-width: 1075px){
+    .blank{
+        min-width: 100px;
+    }
+}
+
+@media (max-width: 1040px){
+    .blank{
+        display: inline;
+        min-width: 23px;
+    }
+}
+
+@media (max-width: 1085px){
+    .checkbtn{
+        display: block;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .nav-right{
+        display: none;
+    }
+    .left-link{
+        display: none;
+    }
+    .blank{
+        display: inline;
+        min-width: 10px;
+    }
+}
+
+@media (max-width: 1049px) {
+    .text-left{
+        flex: 0.5; 
+        margin-left: 100px;
+    }
+    .card{
+        flex: 0.5;
+    }
+    .text-above{
+        font-size: 45px;
+    }
+    .text-below{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 930px){
+    .checkbtn{
+        display: block;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .nav-right{
+        display: none;
+    }
+    .left-link{
+        display: none;
+    }
+    .blank{
+        display: inline;
+        min-width: 10px;
+    }
+}
+
+@media only screen and (max-width: 890px){
+    .mainbody{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-left{
+        width: 100%;
+        text-align-last: center;
+        margin-top: 7px;
+        margin-left: 100px;
+        padding-right: 0px;
+    }
+    .text-above{
+        width: 100%;
+        font-size: 50px;
+        text-align: center;
+    }
+    .text-below{
+        font-size: 22.5px;
+        text-align: center;
+        margin: 0px 30px 0px 1px;
+    }
+    .card{
+        width: 57%;
+        margin-left: 20%;
+        margin-top: 20px;
+        align-items: center;
+    }
+    .col-2 input[type=text] {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    #button{
+        width: 96%;
+    }
+    .foot-git{
+        font-size: 14px;
+    }
+    .foot2{
+        font-size: 32px;
+        text-align: center;
+    }
+    .foot-desc{
+        text-align: center;
+        font-size: 17px;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .foot-signup #button1{
+        font-size: 14px;
+        font-weight: 550;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .newbtn{
+        display: inline;
+    }
+    .card{
+        display: none;
+    }    
+    .mainbody{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .text-left{
+        width: 87%;
+        margin-left: 50px;
+    }
+    .text-above{
+        font-size: 38px;
+        width: 100%;
+        margin-left: -20px;
+    }
+    .text-below{
+        padding: 0px 10px;
+        font-size: 18px;
+        margin: 0px 40px 0px 0px;
+    }
+    .foot{
+        margin-top: 39px;
+    }
+}
+
+@media screen and (max-width: 413px) {
+    .newbtn{
+        display: inline;
+    }
+    .card{
+        display: none;
+    }    
+    .mainbody{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0px;
+    }
+    .text-above{
+        font-size: 38px;
+        margin-left: -20px;
+    }
+    .text-below{
+        padding: 0px 10px;
+        font-size: 18px;
+        margin: 0px 40px 0px 0px;
+    }
+    .foot{
+        margin-bottom: 0px;
+    }
+}
+@media screen and (max-width: 398px) {
+    .checkbtn{
+        margin-right: 10px;
+    }
+    .text-left{
+        width: 85%;
+        margin-left: 50px;
+    }
+    .text-above{
+        font-size: 38px;
+        margin-left: -30px;
+    }
+    .text-below{
+        padding: 0px 10px;
+        font-size: 15px;
+        margin: 0px 40px 0px 0px;
+    }
+}
+@media screen and (max-width: 345px) {
+    .text-left{
+        width: 82%;
+        margin-left: 50px;
+    }
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+/*------------Responsive Ends-------------*/
